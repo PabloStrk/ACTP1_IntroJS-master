@@ -22,11 +22,29 @@ Para la solución puedes inspirarte en: https://codepen.io/gabrieleromanato/pen/
 
 <!DOCTYPE html>
 <html lang="es" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <title></title>
-  </head>
-  <body>
 
-  </body>
+
+<head>
+  <meta charset="utf-8">
+  <title></title>
+  <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
+</head>
+
+
+	<body>
+	  <img src="https://wallpaperstudio10.com/static/wpdb/wallpapers/1000x563/169891.jpg" alt="Costa solitaria">
+	  <img src="https://images8.alphacoders.com/419/thumb-1920-419522.jpg" alt="Se parece a la Comarca">
+
+	  <script>
+	    $(function() {
+	      $("img").on("contextmenu", function(e) {
+	        e.preventDefault();
+	        alert("Estas imágenes tienen derecho de autor y no se pueden descargar sin el consentimiento del autor");
+	      });
+	    });
+	  </script>
+	</body>
+
+
 </html>

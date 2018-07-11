@@ -12,8 +12,24 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
   </head>
   <body>
+
+  	<p>
+  		Lorem ipsum dolor sit amet, consectetur adipisicing elit. <br> 
+  		Quo minus deserunt aut, eius ipsam dolorum ducimus, eum <br> 
+  		voluptatibus ratione nulla quis reprehenderit rem nostrum <br> 
+  		nisi at possimus, consectetur. Saepe, animi!
+  	</p>
+
+  	<script>
+        $(function() {
+        $("p").on("click", function() {
+          alert("Has hecho click a un párrafo!");
+        });
+      });
+    </script>
 
   </body>
 </html>

@@ -8,12 +8,30 @@
   <head>
     <meta charset="utf-8">
     <title></title>
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+
   </head>
+  
   <body>
     <p> clic !! </p>
     <p> clic !! </p>
     <p> clic !! </p>
     <h3> no clic !! </h3>
     <p> clic !! </p>
+
+    <script>
+        $(function() {
+        $("p").on("click", function() {
+          alert("Has hecho click a un párrafo!");
+        });
+      });
+    </script>
+  
   </body>
+
+
 </html>
+
+
+
+ 
